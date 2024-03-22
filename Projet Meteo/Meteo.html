@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Changer en fr pour référencement Google -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Météo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="Meteo.css" />
+    <style>
+      #map {
+        height: 33vh;
+        width: 100%;
+      }
+    </style>
+    <link rel="icon" href="favicon.ico" />
+    <title>Météo Consultation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Consultation France Météo</h1>
+      <h2>Dr Ludovic RABAT</h2>
+      <h3>Météorologue</h3>
+      <div id="heureCentree"></div>
+      <script>
+        function mettreAJourHeure() {
+          const heureCentreeElement = document.getElementById("heureCentree");
+          const maintenant = new Date();
+          const heureLocale = maintenant.toLocaleTimeString("fr-FR");
+
+          heureCentreeElement.innerText = heureLocale;
+          heureCentreeElement.style.textAlign = "center";
+          heureCentreeElement.style.fontSize = "2em";
+          heureCentreeElement.style.fontWeight = "bold";
+        }
+
+        // Mettez à jour l'heure toutes les secondes (1000 millisecondes)
+        setInterval(mettreAJourHeure, 1000);
+
+        // Appel initial pour afficher l'heure au chargement de la page
+        mettreAJourHeure();
+      </script>
+      <br />
+      <label for="cityInput">Choisissez une ville:</label><br />
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Entrez le nom de la ville ou son code postal..."
+      />
+      <button onclick="getWeather()">Obtenir la météo</button>
+      <div id="weatherInfo"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="Meteo.js"></script>
+  </body>
+</html>
