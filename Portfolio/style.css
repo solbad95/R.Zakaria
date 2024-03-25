@@ -1,0 +1,161 @@
+/* General */
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 65px 0 80px 0;
+}
+.heading {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.heading h2 {
+  text-transform: uppercase;
+}
+.divider {
+  width: 100px;
+  height: 2px;
+  background-color: #d82c2e;
+  margin: 0 auto 20px;
+}
+.divider.white {
+  background-color: #fff;
+}
+ul {
+  list-style: none;
+}
+/* NAVBAR */
+.navbar {
+  background-color: #d82c2e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+.navbar-nav {
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-link {
+  color: white !important;
+  margin: 0 6px;
+}
+.nav-link.active {
+  background-color: white;
+  color: #d82c2e;
+}
+.nav-link.active,
+.nav-link:hover {
+  background-color: white;
+  color: #d82c2e !important;
+}
+/* About */
+#about {
+  background-color: #d82c2e;
+  
+}
+.réseaux{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  gap: 20px;
+}
+.image1 {
+  text-align: center;
+  margin: 0px auto 30px;
+}
+#about .heading h1 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.button1 {
+  margin-top: 20px;
+}
+/* SKILLS */
+#skill .heading h2 {
+  color: #d82c2e;
+}
+#skill .progress {
+  height: 45px;
+  margin: 30px 20px;
+}
+#skill .progress:last-child {
+  margin-bottom: 0px;
+}
+#skill .progress-bar h5 {
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 3px;
+}
+
+/* EXPERIENCE */
+
+#experience {
+  background-color: #d82c2e;
+}
+#experience .heading h2 {
+  color: white;
+}
+.block {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+/* EDUCATION */
+#education .heading h2 {
+  color: #d82c2e;
+  margin: 15px 0;
+}
+.education-block {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #e9ecef;
+}
+.education-block span {
+  font-size: 35px;
+}
+.education-block h4 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+/* PORTFOLIO */
+#portfolio {
+  background-color: #d82c2e;
+}
+.github {
+  text-align: center;
+}
+/* RECOMMANDATIONS */
+#recommendations .heading h2 {
+  color: #d82c2e;
+}
+#MyCarousel {
+  padding: 20px 30px 30px;
+}
+#MyCarousel h3 {
+  color: #d82c2e;
+  font-style: italic;
+}
+/* FOOTER */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+}
